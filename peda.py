@@ -443,10 +443,10 @@ class PEDA(object):
         if self.is_target_remote(): # remote target
             ctx = config.Option.get("context")
             config.Option.set("context", None)
-            try:
-                out = self.execute_redirect("call getpid()")
-            except:
-                pass
+            #try:
+                #out = self.execute_redirect("call getpid()")
+            #except:
+            #    pass
 
             config.Option.set("context", ctx)
 
